@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+    padding: 40px 80px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* Section Headings */
+h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    color:white;
+    position: relative;
+}
+
+
+/* Paragraphs */
+p {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Features styling */
+p {
+    white-space: normal;
+}
+
+/* Add spacing between feature blocks */
+p br {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Highlight operation titles */
+p {
+    letter-spacing: 0.3px;
+}
+
+/* Add subtle section spacing */
+h2 + p {
+    margin-bottom: 10px;
+}
+
+/* Smooth hover effect on headings */
+h2:hover {
+    color: #4a47a3;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+<script>
+    function add()
+    {
+        let a= Number (document.getElementById("num1").value);
+        let b= Number (document.getElementById("num2").value);
+        let c= a+b;
+        document.getElementById("output").innerText= ` = ${c}` ;
+        document.getElementById("symbol").innerText= `➕` ;
+    }
+
+    function sub()
+    {
+        let a= Number (document.getElementById("num1").value);
+        let b= Number (document.getElementById("num2").value);
+        let c= a-b;
+        document.getElementById("output").innerText= ` = ${c}` ;
+        document.getElementById("symbol").innerText= `➖` ;
+    }
+
+    function divi()
+    {
+        let a= Number (document.getElementById("num1").value);
+        let b= Number (document.getElementById("num2").value);
+        let c= a/b;
+        document.getElementById("output").innerText= ` = ${c}` ;
+        document.getElementById("symbol").innerText= `➗` ;
+    }
+
+    function rem()
+    {
+        let a= Number (document.getElementById("num1").value);
+        let b= Number (document.getElementById("num2").value);
+        let c= a%b;
+        document.getElementById("output").innerText= ` = ${c}` ;
+        document.getElementById("symbol").innerText= `%` ;
+    }
+
+    function mul()
+    {
+        let a= Number (document.getElementById("num1").value);
+        let b= Number (document.getElementById("num2").value);
+        let c= a*b;
+        document.getElementById("output").innerText= ` = ${c}` ;
+        document.getElementById("symbol").innerText= `✖️` ;
+    }
+</script>
+
+<head>
+    <link rel="stylesheet" href="calculators.css">
+    <h1>SB's CALCULATOR</h1>
+</head>
+<body>
+       <div class="div1">
+            <a href="">Logo</a>
+            <a href="http://127.0.0.1:5500/Calculator%20Project/Calculator.html">Home</a>
+            <a href="http://127.0.0.1:5500/Calculator%20Project/calculator%20about.html">About</a>
+            <a href="http://127.0.0.1:5500/Calculator%20Project/calculator%20contact.html">Contact</a>
+       </div>
+       <div>
+            <h1>Calculator</h1>
+                <input type="text" id="num1" placeholder="Enter the first number"> 
+                <span id="symbol"></span>
+                <input type="text" id="num2" placeholder="Enter the second number">
+                <span id="output"></span>
+        
+                <br> <br>
+
+                <button type="button" onclick="add()">Click for the Addition</button>
+                <button type="button" onclick="sub()">Click for the Substraction</button>
+                <button type="button" onclick="divi()">Click for the Division</button>
+                <button type="button" onclick="rem()">Click for the Remainder</button>
+                <button type="button" onclick="mul()">Click for the Multiplication</button>
+       </div>
+</body>
